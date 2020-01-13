@@ -11,10 +11,10 @@ plugins/*
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!themes/camping-theme/
+!themes/inhabitent/
 
 # Ignore packages #
-themes/camping-theme/node_modules/
+themes/inhabitent/node_modules/
 
 # Ignore OS files #
 .DS_Store
@@ -25,7 +25,7 @@ themes/camping-theme/node_modules/
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-# Ignore logs and databases #
+# Ignore logs and datagibases #
 *.log
 *.sql
 *.sqlite
