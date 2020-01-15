@@ -43,6 +43,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url(../../assets/fonts/Merriweather/style.css);
+@import url(../../assets/fonts/Novecento/style.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -671,4 +674,28 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 footer {
-  background: black; }
+  background-image: url(../../assets/images/dark-wood@2x.png);
+  color: white;
+  text-align: center; }
+  footer h3 {
+    color: #d99054;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+    text-transform: uppercase; }
+  footer p {
+    margin-bottom: .5rem; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left; }
+
+.wrapperItem {
+  margin: 3rem 0;
+  padding-right: 1.5rem; }
+
+.logo {
+  padding-right: 0;
+  width: 50%;
+  grid-column: 3/4; }

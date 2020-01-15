@@ -33,6 +33,16 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<?php
+			$args = array('post_type' => 'post', 'numberposts'=> '2');
+			$posts = get_posts($args);
+		?>
+
+
+		<?php foreach ($posts as $post) : setup_postdata($post);?>
+			<h3><?php get_the_post_thumbnail($post); ?></h3>
+		<?php endforeach; wp_reset_postdata(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
