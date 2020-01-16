@@ -3,3 +3,18 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.home-hero{
+    // display: flex;
+    flex: auto;
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../assets/images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5rem;
+}
+
+
+

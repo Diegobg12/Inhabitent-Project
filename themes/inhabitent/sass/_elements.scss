@@ -2,6 +2,20 @@
 # Elements
 --------------------------------------------------------------*/
 
+// COLORS --------------------------------------------------------------*/
+$base-color:#fff;
+$second-color:#248a83;
+$third-color:#d99054;
+$fourth-color: #2f1339;
+
+
+
+// FONTS--------------------------------------------------------------*/
+$main-font: "Novecento Sans Web",sans-serif;
+$alt-font: "Merriweather Web",serif;
+
+
+
 html {
   box-sizing: border-box;
   @include font-size(1);
@@ -70,4 +84,12 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+
+
+h3{
+  clear: both;
+  line-height: 1.25;
+    font-family: Novecento Sans Web,sans-serif;
+    letter-spacing: 2px;
 }

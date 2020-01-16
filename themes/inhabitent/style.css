@@ -351,6 +351,12 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+h3 {
+  clear: both;
+  line-height: 1.25;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -673,29 +679,63 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home-hero {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  width: auto;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4.5rem; }
+
 footer {
   background-image: url(../../assets/images/dark-wood@2x.png);
-  color: white;
-  text-align: center; }
+  color: #fff;
+  text-align: center;
+  font-family: "Merriweather Web", serif; }
   footer h3 {
+    font-family: "Novecento Sans Web", sans-serif;
     color: #d99054;
-    font-size: 19.2px;
-    font-size: 1.2rem;
     margin-bottom: .75rem;
     text-transform: uppercase; }
   footer p {
     margin-bottom: .5rem; }
+  footer a {
+    text-decoration: none;
+    color: #fff; }
+  footer a:visited {
+    color: #fff; }
+  footer i {
+    font-size: 20px;
+    margin-right: .5rem;
+    color: blue; }
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: left; }
+  grid-template-columns: repeat(4, 25%);
+  text-align: left;
+  padding: 0px 5%; }
 
 .wrapperItem {
   margin: 3rem 0;
-  padding-right: 1.5rem; }
+  margin: 48px 0px; }
 
 .logo {
   padding-right: 0;
-  width: 50%;
-  grid-column: 3/4; }
+  text-align: right;
+  grid-column-start: 3;
+  grid-column-end: 5; }
+  .logo img {
+    max-width: 50%; }
+
+.site-info {
+  font-family: "Novecento Sans Web", sans-serif;
+  padding: 1.5rem 0; }

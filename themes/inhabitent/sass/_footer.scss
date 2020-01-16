@@ -1,12 +1,13 @@
 
 footer{
     background-image: url(../../assets/images/dark-wood@2x.png); 
-    color: white;
+    color: $base-color;
     text-align: center;
+    font-family: $alt-font;
     h3{
-    color: #d99054;
-    font-size: 19.2px;
-    font-size: 1.2rem;
+    font-family: $main-font;
+    color: $third-color;
+
     margin-bottom: .75rem;
     text-transform: uppercase;
     }
@@ -14,25 +15,53 @@ footer{
         margin-bottom: .5rem;
         
     }
+    a{
+        text-decoration: none;
+        color: $base-color;
+    }
+
+    a:visited {
+        color: $base-color;
+      }
     
+    i{
+        font-size: 20px;
+        margin-right: .5rem;
+        color: blue;
+    }
+
+
 }
 
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25%);
     text-align: left;
+    padding: 0px 5%;
 
 }
 
 .wrapperItem{
     margin: 3rem 0;
-    padding-right: 1.5rem;
+    margin: 48px 0px;
 }
 
 .logo{
     padding-right: 0;
-    width: 50%;
-    grid-column: 3/4;
+    text-align: right;
+    grid-column-start: 3; 
+    grid-column-end: 5;
+    img{
+        max-width: 50%;
+    }
 
 }
+
+.site-info{
+    font-family: $main-font;
+    padding: 1.5rem 0;
+
+}
+
+
 
