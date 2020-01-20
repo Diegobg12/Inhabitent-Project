@@ -3,11 +3,9 @@ footer{
     background-image: url(../../assets/images/dark-wood@2x.png); 
     color: $base-color;
     text-align: center;
-    font-family: $alt-font;
+    font-family: $font_alt;
     h3{
-    font-family: $main-font;
     color: $third-color;
-
     margin-bottom: .75rem;
     text-transform: uppercase;
     }
@@ -27,7 +25,6 @@ footer{
     i{
         font-size: 20px;
         margin-right: .5rem;
-        color: blue;
     }
 
 
@@ -58,7 +55,7 @@ footer{
 }
 
 .site-info{
-    font-family: $main-font;
+    font-family: $font__main;
     padding: 1.5rem 0;
 
 }

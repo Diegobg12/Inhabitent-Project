@@ -2,17 +2,6 @@
 # Elements
 --------------------------------------------------------------*/
 
-// COLORS --------------------------------------------------------------*/
-$base-color:#fff;
-$second-color:#248a83;
-$third-color:#d99054;
-$fourth-color: #2f1339;
-
-
-
-// FONTS--------------------------------------------------------------*/
-$main-font: "Novecento Sans Web",sans-serif;
-$alt-font: "Merriweather Web",serif;
 
 
 
@@ -30,6 +19,7 @@ html {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  line-height: 1.75;
 }
 
 blockquote,
@@ -56,6 +46,7 @@ ol {
 
 ul {
   list-style: disc;
+  list-style-type: none;
 }
 
 ol {
@@ -92,4 +83,14 @@ h3{
   line-height: 1.25;
     font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
+}
+
+h2{
+  font-family: $font_alt;
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  color: $fourth-color;
 }
