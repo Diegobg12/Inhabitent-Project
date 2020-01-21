@@ -690,23 +690,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.home-hero {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  width: auto;
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
-  background-size: cover,cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 4.5rem; }
-
 .product-info {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

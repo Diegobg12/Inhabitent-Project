@@ -18,14 +18,35 @@ get_header(); ?>
 	</section>
 
 
+
+
 	<section>
-		<h2> SHOP STUFF</h2>
+
+	<h2>SHOP STUFF</h2>
+	<section class="product-info">
+
+			<?php 
+
+			$terms = get_terms('product_taxonomy');
+			?>
+
+			<ul>
+
+			<?php foreach($terms as $term):?>
+				<li> <a href="<?php echo esc_url(get_term_link($term));?>"><?php echo $term->name;?></a></li>
+			<?php endforeach; ?>
+			</ul>
+
+	</section>
+	
+
+
+		
 
 		<div class="product-info">
 			<div class="info_wrapper">
 			<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/do.svg" alt="">				
 				<p> Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-				<a class= "first-button" href="">DO STUFF</a>
 			</div>
 			<div class="info_wrapper">
 				<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/eat.svg" alt="">				

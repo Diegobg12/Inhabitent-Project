@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+	<h1>SEARCH HOLA DdfDF</h1>
+
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
