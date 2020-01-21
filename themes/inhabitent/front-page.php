@@ -23,48 +23,19 @@ get_header(); ?>
 	<section>
 
 	<h2>SHOP STUFF</h2>
-	<section class="product-info">
+	<section >
 
-			<?php 
-
-			$terms = get_terms('product_taxonomy');
-			?>
-
-			<ul>
-
+		<ul class="product-info">
+		<?php $terms = get_terms('product_taxonomy');?>
 			<?php foreach($terms as $term):?>
-				<li> <a href="<?php echo esc_url(get_term_link($term));?>"><?php echo $term->name;?></a></li>
+				<li class="info_wrapper">
+					<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/<?php echo $term->name;?>.svg" alt="">				
+					<p><?php echo $term->description;?></p>
+					<a href="<?php echo esc_url(get_term_link($term));?>"><?php echo $term->name;?> STUFF</a>
+				</li>
 			<?php endforeach; ?>
-			</ul>
 
-	</section>
-	
-
-
-		
-
-		<div class="product-info">
-			<div class="info_wrapper">
-			<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/do.svg" alt="">				
-				<p> Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-			</div>
-			<div class="info_wrapper">
-				<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/eat.svg" alt="">				
-
-				<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-				<a class= "first-button" href="">EAT STUFF</a>
-			</div>
-			<div class="info_wrapper">
-				<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/sleep.svg" alt="">				
-				<p>Get a good night's rest in the wild in a home away from home that travels well</p>
-				<a class= "first-button" href="">SLEEP STUFF</a>
-			</div>
-			<div class="info_wrapper">
-			<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/wear.svg" alt="">				
-				<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-				<a class= "first-button" href="">WEAR STUFF</a>
-			</div>
-		</div>
+		</ul>
 		
 	</section>
 
