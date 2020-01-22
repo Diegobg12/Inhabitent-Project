@@ -17,7 +17,34 @@ get_header(); ?>
 
 	</section>
 
+	<section>
 
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		<?php if ( have_posts() ) : ?>
+
+
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php
+					get_template_part( 'template-parts/content' );
+				?>
+
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	</section>
 
 
 	<section>
@@ -31,7 +58,7 @@ get_header(); ?>
 				<li class="info_wrapper">
 					<img src= "<?php echo get_template_directory_uri();?>/assets/images/product-type-icons/<?php echo $term->name;?>.svg" alt="">				
 					<p><?php echo $term->description;?></p>
-					<a href="<?php echo esc_url(get_term_link($term));?>"><?php echo $term->name;?> STUFF</a>
+					<a class="btn" href="<?php echo esc_url(get_term_link($term));?>"><?php echo $term->name;?> STUFF</a>
 				</li>
 			<?php endforeach; ?>
 
@@ -39,40 +66,50 @@ get_header(); ?>
 		
 	</section>
 
-	<section class="container">
+	<section class="latest-entries">
 
+	<div class= "container">
+
+	
 			<h2>INHABITENT JOURNAL</h2>
 
-	<?php
-		   $args = array( 'post_type' => 'post', 'numberposts' => '3' );
-		   $posts = get_posts( $args ); // returns an array of posts
-	?>
-		<ul class = "content-wrap">
-		<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-			<li>
-				<div class= "image_wrapper">
-					<img class = "" src = "<?php echo get_the_post_thumbnail_url(); ?>">
-				</div>
+			<?php
+				$args = array( 'post_type' => 'post', 'numberposts' => '3' );
+				$posts = get_posts( $args ); // returns an array of posts
+			?>
+				<ul >
+				<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+					<li>
+						<div class= "thumbnail-wrapper">
+							<img class = "wp-post-image" src = "<?php echo get_the_post_thumbnail_url(); ?>">
+						</div>
 
-				<div>
-					<span></span>
-						<a href="<?php echo get_permalink(); ?>" rel="bookmark"><?php echo get_the_title() ?></a>
-					<div>
+						<div class="post-info-wrapper">
+							<span class="entry-meta">
 
-						<a class= "second-button" href="<?php echo get_permalink(); ?>" rel="bookmark">Read Entry</a>
+							
+							<span> <?php echo get_the_date() ?>
+							 <?php $comments_count = get_comments(); ?>
+							 <?php $comments_count; ?></span>
 
+							 </span>
+							<h3> <a href="<?php echo get_permalink(); ?>" rel="bookmark"><?php echo get_the_title() ?></a></h3>
+							<div>
+
+								<a class= "second-button" href="<?php echo get_permalink(); ?>" rel="bookmark">Read Entry</a>
+
+							</div>
+
+						</div>
+
+					</li>
+
+					<?php endforeach; wp_reset_postdata(); ?>
 					</div>
 
-				</div>
+				</ul>
 
-			</li>
-
-			<?php endforeach; wp_reset_postdata(); ?>
-			</div>
-
-		</ul>
-
-			
+	</div>		
 
 	</section>
 

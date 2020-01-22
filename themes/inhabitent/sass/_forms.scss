@@ -60,3 +60,23 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+.btn{
+	background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;	
+
+}
+
+.btn:hover{
+	background: #1e6863;	
+}

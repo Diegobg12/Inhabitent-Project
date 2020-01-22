@@ -3,13 +3,14 @@ footer{
     background-image: url(../../assets/images/dark-wood@2x.png); 
     color: $base-color;
     text-align: center;
-    font-family: $font_alt;
+    font-family: $font__main;
     h3{
     color: $third-color;
     margin-bottom: .75rem;
     text-transform: uppercase;
     }
     p{
+            
         margin-bottom: .5rem;
         
     }

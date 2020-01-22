@@ -1,0 +1,31 @@
+
+
+.site-title{
+    background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px;
+}
+
+.site-header{
+    
+    padding: .5rem 0;
+    .container{
+        position: fixed;
+        background-color: red;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    h1{
+        background-size: 50px 33px;
+        height: 33px;
+        margin: 0;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        width: 50px;
+    }
+}
+

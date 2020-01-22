@@ -81,8 +81,12 @@ table {
 h3{
   clear: both;
   line-height: 1.25;
+  font-size: 1.3rem;
     font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
+    a:hover{
+      color: $fourth-color;
+  }
 }
 
 h2{

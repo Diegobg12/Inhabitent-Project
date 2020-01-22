@@ -5,7 +5,9 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $second-color;
+    text-decoration: none;
+
 
 	&:visited {
 		color: $color__link-visited;
@@ -30,7 +32,8 @@ a {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
+	font-family: $font_alt;
+    text-transform: uppercase;
 
 	ul {
 		display: none;
@@ -52,6 +55,8 @@ a {
 			}
 
 			li {
+				float: left;
+
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -79,6 +84,8 @@ a {
 	li {
 		float: left;
 		position: relative;
+		padding-left: 1.5rem;
+		position: relative;
 
 		&:hover > a,
 		&.focus > a {
@@ -94,6 +101,7 @@ a {
 	.current_page_ancestor > a {
 	}
 }
+
 
 /* Small menu. */
 .menu-toggle,
@@ -129,4 +137,42 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.first-button{
+
+    background: $second-color;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: $font_alt;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.first-button:hover{
+    background: $second-color; 
+}
+
+.second-button{
+	font-family: $font_alt;
+    color: black;
+    border: 1px solid #000;
+    color: #000;
+    font-size: .9rem;
+    line-height: 1;
+	padding: .75rem 1.5rem;
+	text-transform: uppercase;
+}
+
+.second-button:hover{
+    color: $base-color;
+    background: $second-color;
+    border: 1px solid $second-color; 
 }

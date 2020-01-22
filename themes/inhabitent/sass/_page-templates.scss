@@ -7,9 +7,82 @@
 
 
 .home-hero{
-    // display: flex;
+    display: flex;
 
 }
+.home{
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+    }
+
+    .latest-entries{
+
+
+        .wp-post-image{
+            left: 50%;
+            max-height: 250px;
+            max-width: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-52%);
+            width: auto;
+        }
+        ul{
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-around;
+            list-style-type: none;
+            margin-bottom: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+
+        li{
+            border: 1px solid #e1e1e1;
+            -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+            position: relative;
+        }
+
+        .entry-meta{
+            
+            font-size: .75rem;
+        }
+
+
+
+        .thumbnail-wrapper{
+            background-color: #e1e1e1;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .wp-post-image{
+            left: 50%;
+            max-height: 250px;
+            max-width: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-52%);
+            width: auto;
+        }
+        .post-info-wrapper{
+            flex-direction: column;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: .75rem;
+        }
+
+
+    }
+}
+
+
 
 .product-info{
 
@@ -29,41 +102,9 @@
     }
 }
 
-.first-button{
 
-    background: #248a83;
-    border: none;
-    border-radius: 0;
-    color: #fff;
-    cursor: pointer;
-    font-family: $font_alt;
-    font-size: 14.4px;
-    font-size: .9rem;
-    line-height: 1;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
 
-}
 
-.first-button:hover{
-    background: $second-color; 
-}
-
-.second-button{
-    color: black;
-    border: 1px solid #000;
-    color: #000;
-    font-size: .9rem;
-    line-height: 1;
-    padding: .75rem 1.5rem;
-}
-
-.second-button:hover{
-    color: $base-color;
-    background: $second-color;
-    border: 1px solid $second-color; 
-}
 
 .info_wrapper{
     
@@ -81,38 +122,12 @@
     border-top-width: 5px;
 }
 
-
-.content-wrap{
-    display: flex;
-    a{
-        color: #248a83;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: $font_alt;
-    }
-    .second-button{
-        color: black;
-    }
-}
-
-.image_wrapper{
-    
-    background-color: #e1e1e1;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-
-    img{
-        left: 50%;
-    max-height: 250px;
-    max-width: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-52%);
-    width: auto;
-}
+h3{
+    text-transform: uppercase;
     
 }
+
+
 
 
 
