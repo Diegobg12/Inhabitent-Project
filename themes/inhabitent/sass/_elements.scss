@@ -20,6 +20,7 @@ html {
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
   line-height: 1.75;
+  color: $color__text-main;
 }
 
 blockquote,
@@ -76,12 +77,18 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 }
+h1{
+  clear: both;
+    font-family: Novecento Sans Web,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 
 h3{
   clear: both;
   line-height: 1.25;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
     font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
     a:hover{
@@ -90,6 +97,8 @@ h3{
 }
 
 h2{
+  letter-spacing: 2px;
+  text-transform: uppercase;
   font-family: $font_alt;
   font-size: 38.4px;
   font-size: 2.4rem;
@@ -97,4 +106,21 @@ h2{
   margin-bottom: 3.75rem;
   text-align: center;
   color: $fourth-color;
+  font-size: 2.1rem;
+  
+}
+
+
+label{
+  color: #2f1339;
+  display: block;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.comment-reply-title {
+  margin-top: 1.5rem;
 }

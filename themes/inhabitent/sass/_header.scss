@@ -6,16 +6,19 @@
 }
 
 .site-header{
-    
-    padding: .5rem 0;
+
     .container{
         position: fixed;
-        background-color: red;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         
+        
+    }
+
+    a{
+        color: green;
     }
     
     h1{
@@ -26,6 +29,8 @@
         text-indent: 100%;
         white-space: nowrap;
         width: 50px;
+
     }
 }
+
 

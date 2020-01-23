@@ -4,33 +4,29 @@
  *
  * @package RED_Starter_Theme
  */
-// http://localhost:8888/wordpress%202/index.php/product_type/
 
 get_header(); ?>
 
 
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-<section>
 
+			<section class= "page-header">
+
+			<h1>SHOP STUFF</h1>
 				<?php 
 				
 				$terms = get_terms('product_taxonomy');
 				?>
 
-			<ul>
-
-
-
-
+			<ul class="product-type-list">
 				<?php foreach($terms as $term):?>
 					<li> <a href="<?php echo esc_url(get_term_link($term));?>"><?php echo $term->name;?></a></li>
 				<?php endforeach; ?>
 			</ul>
-			
-</section>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+			</section>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -55,5 +51,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<!-- <?php get_sidebar(); ?> -->
+<!-- <?php get_sidebar(); ?>  -->
 <?php get_footer(); ?>

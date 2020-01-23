@@ -47,3 +47,50 @@
 .bypostauthor {
 	display: block;
 }
+
+.comment article {
+    padding-bottom: 1.5rem;
+}
+
+.comment-author-avatar {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    width: 64px;
+}
+
+.comment-list {
+    margin-left: 0;
+	padding-left: 0;
+	li{
+		margin: 0;
+	}
+}
+
+.comment-list>li {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+
+.comment-body {
+    display: -ms-flexbox;
+	display: flex;
+	.comment-body p {
+		margin-bottom: .75rem;
+	}
+}
+
+.comment-author cite {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.comment-metadata {
+    color: gray;
+    margin-bottom: .75rem;
+}

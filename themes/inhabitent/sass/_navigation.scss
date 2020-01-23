@@ -6,11 +6,13 @@
 
 a {
 	color: $second-color;
-    text-decoration: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: $font_alt;
 
 
 	&:visited {
-		color: $color__link-visited;
+		color: none;
 	}
 	&:hover,
 	&:focus,

@@ -2,12 +2,29 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
+// about page-------
+.about-hero{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../assets/images/about-hero.jpg) no-repeat top;
+    height: 100vh;
+    background-size: cover,cover;
+    justify-content: center;
+
+}
+
 /* Front page */
 
 
 
 .home-hero{
     display: flex;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../assets/images/home-hero.jpg) no-repeat top;
+    height: 100vh;
+    background-size: cover,cover;
+    justify-content: center;
 
 }
 .home{
@@ -102,6 +119,13 @@
     }
 }
 
+.content-area{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
 
 
@@ -129,8 +153,152 @@ h3{
 
 
 
+// PRODUCT-TYPE-----------------
+
+.page-header{
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.product-type-list {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-transform: uppercase;
+    li{
+        margin: 0 1.5rem;
+    }
+}
 
 
+// JOURNAL-------------
 
 
+.content-area{
+    display: flex;
+}
+
+.post-content{
+    padding-right: 5%;
+    width: 80%;
+    li{
+        margin: 0 0 4.5rem;
+    }
+
+    h1{
+        background-color: #248a83;
+        color: #fff;
+        font-size: 33.6px;
+        font-size: 2.1rem;
+        left: 0;
+        padding: .75rem 1.5rem;
+        position: absolute;
+        margin-top: 2.25rem;
+        max-width: 75%;
+        top: 0;
+        line-height: 1.25;
+        text-align: left;
+        font-weight: bold;
+    }
+    .wp-post-image{
+        width: 100%;
+    }
+
+}
+
+.widget-area{
+    border-left: 1px solid #e1e1e1;
+    padding-left: 5%;
+    text-align: left;
+    width: 27%;
+
+    a{
+        font-family: $font__main;
+        text-transform: initial;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+        text-align: left; 
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    ul{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.entry-header{
+    line-height: 0;
+    position: relative;
+    justify-content: left;
+
+    a{
+        color: #fff;
+    }
+    h2{
+        background-color: #248a83;
+        color: #fff;
+        font-size: 33.6px;
+        font-size: 2.1rem;
+        left: 0;
+        padding: .75rem 1.5rem;
+        position: absolute;
+        margin-top: 2.25rem;
+        max-width: 75%;
+        top: 0;
+        line-height: 1.25;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+.entry-meta{
+
+    background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.00005rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    
+}
+
+
+.entry-footer{
+    text-align: left;
+    background: none ;
+    color: $color__text-main;
+    a{
+        color:  #248a83;
+      }
+      a:visited{
+        color:  #248a83;
+      }
+}
+.cat-links, .tags-links {
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase;
+
+}
+
+.comments-area{
+    h2{
+        text-align: left;
+        font-weight: bold;
+    }
+}
 

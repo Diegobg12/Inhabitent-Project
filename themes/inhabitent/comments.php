@@ -64,12 +64,12 @@ if ( post_password_required() ) {
 	?>
 		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
 	<?php endif; ?>
-
+	
 	<?php comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
 		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
 	) ); ?>
-
+	
 </div><!-- #comments -->

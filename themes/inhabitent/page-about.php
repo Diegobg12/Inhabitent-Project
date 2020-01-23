@@ -6,7 +6,16 @@
  * @package RED_Starter_Theme
  */
 
+ 
 get_header(); ?>
+	<section class= "about-hero">
+
+	<div class= "home-item">
+
+			<h1>about</h1>
+	</div>
+
+</section>
 
 
 <div id="primary" class="content-area">

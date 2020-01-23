@@ -26,7 +26,7 @@
 
 					<div class="site-branding">
 						<div class= "logo">
-							<a href="">
+							<a href="http://localhost:8888/inhabitent">
 								<h1 class= "site-title">Inhabitent</h1>
 							</a>
 						</div>

@@ -1,27 +1,30 @@
-
 <?php
 /**
- * The main template file.
- *
- * @package RED_Starter_Theme
- */
+* The template for displaying all single posts.
+*
+* @package RED_Starter_Theme
+*/
 
 get_header(); ?>
 
-
-
-
 <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-	<h1>hakjhahlsdflh</h1>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+	<ul class="post-content">
+		
+		<main id="main" class="site-main " role="main">
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; // End of the loop. ?>
+		<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+		
+		<?php endwhile; // End of the loop. ?>
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	</ul>
+
+   <?php get_sidebar(); ?>
+   </div><!-- #primary -->
+
+
 
 <?php get_footer(); ?>
