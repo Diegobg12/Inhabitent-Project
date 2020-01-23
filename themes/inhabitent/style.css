@@ -824,6 +824,27 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .about-hero h1 {
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3rem; }
+
+.about-wrapper {
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .about-wrapper h2 {
+    color: #2f1339;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold; }
+  .about-wrapper h1 {
+    display: none; }
+
+.about-page-content {
+  margin: auto;
+  width: 80%; }
 
 /* Front page */
 .home-hero {

@@ -12,15 +12,15 @@ get_header(); ?>
 
 	<div class= "home-item">
 
-			<h1>about</h1>
+	<h1><?php echo get_the_title(); ?> </h1>
+			
 	</div>
 
-</section>
+	</section>
 
 
-<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+<div style="padding-top: 0;" id="primary" class="content-area about-wrapper">
+		<main id="main" class="site-main about-page-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
