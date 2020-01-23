@@ -58,7 +58,7 @@ a {
 
 			li {
 				float: left;
-
+				list-style: none;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -88,7 +88,7 @@ a {
 		position: relative;
 		padding-left: 1.5rem;
 		position: relative;
-
+		list-style: none;
 		&:hover > a,
 		&.focus > a {
 		}
@@ -178,3 +178,15 @@ a {
     background: $second-color;
     border: 1px solid $second-color; 
 }
+
+#menu-item-181{
+	a{
+		background-image: url('searchicon.png');
+		overflow: hidden;
+	}
+
+}
+
+#menu-item-181:focus {
+	width: 20%;
+  }

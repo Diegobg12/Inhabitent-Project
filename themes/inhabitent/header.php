@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The header for our theme.
@@ -12,8 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
 
 	<?php wp_head(); ?>
 	</head>
@@ -54,6 +55,19 @@
 						<div class="menu-main-navigation-container">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</div>
+
+						<div class="menu-main-navigation-container">
+						
+						<li>
+						<!-- <?php get_search_form(); ?> -->
+							<a href="">
+								<i class="fa fa-search"> </i>
+							</a>
+													
+						</li>
+						
+						</div>
+						
 					</nav><!-- #site-navigation -->
 						
 				</div>

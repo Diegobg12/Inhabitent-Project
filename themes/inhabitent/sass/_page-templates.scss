@@ -228,6 +228,10 @@ h3{
         font-family: $font__main;
         text-transform: initial;
     }
+
+    a:hover{
+        color: $fourth-color;
+    }
     
     h2{
         font-size: 1.5rem;
@@ -249,6 +253,10 @@ h3{
 
     a{
         color: #fff;
+    }
+
+    a:hover{
+        color: $fifth-color;
     }
     h2{
         background-color: $second-color;

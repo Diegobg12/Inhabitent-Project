@@ -110,3 +110,20 @@
 
 
 
+
+// $(window).scroll(function() {    
+//   var scroll = $(window).scrollTop();
+//   var mainPage = $( "#masthead" ).hasClass( "home-site-header" );
+//    //>=, not <=
+
+//       if ((scroll >= 700) && !mainPage ){
+//           //clearHeader, not clearheader - caps H
+//           // $("#masthead").removeClass();
+//           $("#masthead").addClass("site-header");
+//       }else{
+//         $("#masthead").removeClass("site-header");
+//         // $("#masthead").addClass("home-site-header");
+//       }
+   
+
+// }); 

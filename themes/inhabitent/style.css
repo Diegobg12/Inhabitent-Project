@@ -521,7 +521,8 @@ a {
         left: -999rem;
         top: 0; }
       .main-navigation ul ul li {
-        float: left; }
+        float: left;
+        list-style: none; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%; }
@@ -534,7 +535,8 @@ a {
     float: left;
     position: relative;
     padding-left: 1.5rem;
-    position: relative; }
+    position: relative;
+    list-style: none; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -600,6 +602,13 @@ a {
   color: #fff;
   background: #248a83;
   border: 1px solid #248a83; }
+
+#menu-item-181 a {
+  background-image: url("searchicon.png");
+  overflow: hidden; }
+
+#menu-item-181:focus {
+  width: 20%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -992,6 +1001,8 @@ h3 {
   .widget-area a {
     font-family: "Merriweather Web", serif;
     text-transform: initial; }
+  .widget-area a:hover {
+    color: #2f1339; }
   .widget-area h2 {
     font-size: 1.5rem;
     text-align: left;
@@ -1010,6 +1021,8 @@ h3 {
           justify-content: left; }
   .entry-header a {
     color: #fff; }
+  .entry-header a:hover {
+    color: #f3f3bf; }
   .entry-header h2 {
     background-color: #248a83;
     color: #fff;
@@ -1127,6 +1140,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .site-header i {
+    color: #248a83; }
+  .site-header i:hover {
+    color: #2f1339; }
   .site-header .site-title {
     background: url(../../assets/images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px 33px; }
@@ -1144,6 +1161,8 @@ footer {
     margin: auto; }
   .site-header a {
     color: #248a83; }
+  .site-header a:hover {
+    color: #2f1339; }
   .site-header h1 {
     background-size: 50px 33px;
     height: 33px;
@@ -1181,6 +1200,12 @@ footer {
     margin: auto; }
   .home-site-header a {
     color: #fff; }
+  .home-site-header a:hover {
+    color: #f3f3bf; }
+  .home-site-header i {
+    color: #fff; }
+  .home-site-header i:hover {
+    color: #f3f3bf; }
   .home-site-header h1 {
     background-size: 50px 33px;
     height: 33px;
@@ -1189,6 +1214,11 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     width: 50px; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .product-type-list {
   display: -ms-flexbox;
@@ -1206,6 +1236,8 @@ footer {
   text-transform: uppercase; }
   .product-type-list li {
     margin: 0 1.5rem; }
+  .product-type-list a:hover {
+    color: #2f1339; }
 
 .product-grid {
   display: grid;

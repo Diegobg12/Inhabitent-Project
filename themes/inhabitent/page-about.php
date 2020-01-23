@@ -8,7 +8,7 @@
 
  
 get_header(); ?>
-	<section class= "about-hero">
+	<section id = "diferent" class= "about-hero">
 
 	<div class= "home-item">
 
