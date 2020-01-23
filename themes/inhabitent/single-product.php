@@ -24,10 +24,10 @@ get_header(); ?>
             <div class="entry-content">
                <p class="price"><?php echo CFS()->get('price');?></p>
                <p><?php echo get_the_content();?></p>
-               <div class="social-buttons">
-                  <a type="button" class="second-button"><i class="fa fa-facebook"></i> Like</a>
-                  <a type="button" class="second-button"><i class="fa fa-twitter"></i> Tweet</a>
-                  <a type="button" class="second-button"><i class="fa fa-pinterest"></i> Pin</a>
+               <div >
+                  <a href="" class="second-button"><span class="fa fa-facebook"></span> Like</a>
+                  <a  href="" class="second-button"><span class="fa fa-twitter"></span> Tweet</a>
+                  <a  href="" class="second-button"><span class="fa fa-pinterest"></span> Pin</a>
                </div>
 
             </div>

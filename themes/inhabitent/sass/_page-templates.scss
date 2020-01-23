@@ -22,13 +22,6 @@
 }
 .about-wrapper{
     align-content: center;
-    h2{
-        color: #2f1339;
-        font-size: 33.6px;
-        font-size: 2.1rem;
-        margin-bottom: 1.5rem;
-        font-weight: bold;
-    }
     h1{
         display: none;
     }
@@ -204,7 +197,7 @@ h3{
     }
 
     h1{
-        background-color: #248a83;
+        background-color: $second-color;
         color: #fff;
         font-size: 33.6px;
         font-size: 2.1rem;
@@ -258,7 +251,7 @@ h3{
         color: #fff;
     }
     h2{
-        background-color: #248a83;
+        background-color: $second-color;
         color: #fff;
         font-size: 33.6px;
         font-size: 2.1rem;
@@ -274,7 +267,7 @@ h3{
     }
         .entry-meta{
 
-        background-color: #248a83;
+        background-color: $second-color;
         bottom: 0;
         color: #fff;
         display: inline-block;
@@ -298,10 +291,10 @@ h3{
     background: none ;
     color: $color__text-main;
     a{
-        color:  #248a83;
+        color:  $second-color;
       }
       a:visited{
-        color:  #248a83;
+        color:  $second-color;
       }
 }
 .cat-links, .tags-links {
@@ -317,4 +310,39 @@ h3{
         font-weight: bold;
     }
 }
+
+// find-us
+
+.find-us{
+    padding-right: 5%;
+    width: 80%;
+    h2{
+        text-align: left; 
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+    
+    }
+
+    h1{
+        text-align: left;
+    }
+
+
+}
+
+// 404 ERROR
+
+.error{
+    li{
+        margin: 0px;
+    }
+}
+
+
+
+
 

@@ -9,7 +9,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area journal">
+
+	<section class="site-content find-us"> 
+
+	
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
@@ -17,7 +21,7 @@ get_header(); ?>
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="page-content error">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
@@ -50,6 +54,9 @@ get_header(); ?>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		</section>
 
+		<?php get_sidebar(); ?>
+	</div><!-- #primary -->
+	
 <?php get_footer(); ?>

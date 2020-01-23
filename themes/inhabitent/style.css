@@ -203,7 +203,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -833,12 +833,6 @@ object {
 .about-wrapper {
   -ms-flex-line-pack: center;
       align-content: center; }
-  .about-wrapper h2 {
-    color: #2f1339;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold; }
   .about-wrapper h1 {
     display: none; }
 
@@ -1062,6 +1056,22 @@ h3 {
   text-align: left;
   font-weight: bold; }
 
+.find-us {
+  padding-right: 5%;
+  width: 80%; }
+  .find-us h2 {
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: bold; }
+  .find-us ul {
+    margin: 0px;
+    padding: 0px; }
+  .find-us h1 {
+    text-align: left; }
+
+.error li {
+  margin: 0px; }
+
 footer {
   background-image: url(../../assets/images/dark-wood@2x.png);
   color: #fff;
@@ -1104,34 +1114,81 @@ footer {
   font-family: "Merriweather Web", serif;
   padding: 1.5rem 0; }
 
-.site-title {
-  background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-  background-size: 50px 33px; }
-
-.site-header .container {
+.site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
   position: fixed;
+  -webkit-transition: top .5s linear;
+  transition: top .5s linear;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  z-index: 3;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+          align-items: center; }
+  .site-header .site-title {
+    background: url(../../assets/images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .site-header .container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto; }
+  .site-header a {
+    color: #248a83; }
+  .site-header h1 {
+    background-size: 50px 33px;
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px; }
 
-.site-header a {
-  color: green; }
-
-.site-header h1 {
-  background-size: 50px 33px;
-  height: 33px;
-  margin: 0;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  width: 50px; }
+.home-site-header {
+  padding: .5rem 0;
+  position: absolute;
+  -webkit-transition: top .5s linear;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .home-site-header .site-title {
+    background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px; }
+  .home-site-header .container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto; }
+  .home-site-header a {
+    color: #fff; }
+  .home-site-header h1 {
+    background-size: 50px 33px;
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px; }
 
 .product-type-list {
   display: -ms-flexbox;

@@ -1,24 +1,34 @@
 
 
-.site-title{
-    background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-    background-size: 50px 33px;
-}
+
 
 .site-header{
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
+    margin: auto;
+    align-items: center;
 
+    .site-title{
+        background: url(../../assets/images/logos/inhabitent-logo-tent.svg) no-repeat;
+        background-size: 50px 33px;
+    }
     .container{
-        position: fixed;
-        width: 100%;
+
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        margin: auto;
         
     }
 
     a{
-        color: green;
+        color:$second-color;
     }
     
     h1{
@@ -34,3 +44,41 @@
 }
 
 
+.home-site-header{
+    padding: .5rem 0;
+    position: absolute;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
+    margin: auto;
+    align-items: center;
+
+    .site-title{
+        background: url(../../assets/images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+        background-size: 50px 33px;
+    }
+    .container{
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        
+    }
+
+    a{
+        color:$base-color;
+    }
+    
+    h1{
+        background-size: 50px 33px;
+        height: 33px;
+        margin: 0;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        width: 50px;
+
+    }
+}
