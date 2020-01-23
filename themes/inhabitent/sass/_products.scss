@@ -78,12 +78,13 @@
     }
 
     // SINGLE PRODUCT-----
-    .hentry{
+    .single-product{
         margin: 0 0 4.5rem;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        
         .product-image-wrapper {
         width: 48%;
         }

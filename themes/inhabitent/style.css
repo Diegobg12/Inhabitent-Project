@@ -1177,7 +1177,7 @@ footer {
   white-space: nowrap;
   content: "..................................................."; }
 
-.hentry {
+.single-product {
   margin: 0 0 4.5rem;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -1185,15 +1185,15 @@ footer {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
           justify-content: space-between; }
-  .hentry .product-image-wrapper {
+  .single-product .product-image-wrapper {
     width: 48%; }
-  .hentry .product-content-wrapper {
+  .single-product .product-content-wrapper {
     width: 48%; }
-  .hentry .price {
+  .single-product .price {
     font-family: Novecento Sans Web,sans-serif;
     font-size: 28.8px;
     font-size: 1.8rem;
     margin-top: 0;
     text-transform: uppercase; }
-  .hentry h1 {
+  .single-product h1 {
     color: #d99054; }

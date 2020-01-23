@@ -11,7 +11,7 @@ get_header(); ?>
    <main id="main" class="site-main " role="main">
    <?php while ( have_posts() ) : the_post(); ?>
 
-   <article class="hentry">
+   <article class="single-product">
          <div class="product-image-wrapper">
             <img  class="wp-post-image" src="<?php echo CFS()->get('image'); ?>" alt="">
          </div>
