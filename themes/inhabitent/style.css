@@ -1176,3 +1176,24 @@ footer {
   width: 0;
   white-space: nowrap;
   content: "..................................................."; }
+
+.hentry {
+  margin: 0 0 4.5rem;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  .hentry .product-image-wrapper {
+    width: 48%; }
+  .hentry .product-content-wrapper {
+    width: 48%; }
+  .hentry .price {
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-transform: uppercase; }
+  .hentry h1 {
+    color: #d99054; }

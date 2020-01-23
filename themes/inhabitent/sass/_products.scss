@@ -76,3 +76,32 @@
         white-space: nowrap;
         content: "...................................................";
     }
+
+    // SINGLE PRODUCT-----
+    .hentry{
+        margin: 0 0 4.5rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        .product-image-wrapper {
+        width: 48%;
+        }
+
+        .product-content-wrapper{
+            width: 48%;
+                }
+        
+        .price{
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 28.8px;
+            font-size: 1.8rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        h1{
+            color: #d99054;
+        }
+
+    }

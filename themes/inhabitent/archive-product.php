@@ -52,8 +52,9 @@ get_header(); ?>
 							
 							<span class="price"><?php echo CFS()->get('price');?></span>
 						</div>
-						<?php endwhile; ?>
+						
 				</div>
+				<?php endwhile; ?>
 
 				
 
