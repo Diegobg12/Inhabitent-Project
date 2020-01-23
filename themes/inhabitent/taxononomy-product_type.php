@@ -52,10 +52,10 @@ get_header(); ?>
 							
 							<span class="price"><?php echo CFS()->get('price');?></span>
 						</div>
-						<?php endwhile; ?>
 				</div>
 
-				
+				<?php endwhile; ?>
+
 
 				<?php else : ?>
     				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

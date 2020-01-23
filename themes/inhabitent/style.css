@@ -363,7 +363,7 @@ h1 {
 h3 {
   clear: both;
   line-height: 1.25;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: Novecento Sans Web,sans-serif;
   letter-spacing: 2px; }
   h3 a:hover {
@@ -391,7 +391,8 @@ label {
   text-transform: uppercase; }
 
 .comment-reply-title {
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  font-size: 1.8rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -917,7 +918,7 @@ object {
 .content-area {
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 90%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -941,23 +942,7 @@ h3 {
   margin-bottom: 3rem;
   text-align: center; }
 
-.product-type-list {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-  text-transform: uppercase; }
-  .product-type-list li {
-    margin: 0 1.5rem; }
-
-.content-area {
+.journal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1024,17 +1009,19 @@ h3 {
     line-height: 1.25;
     text-align: left;
     font-weight: bold; }
+  .entry-header .entry-meta {
+    background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.00005rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase; }
 
 .entry-meta {
-  background-color: #248a83;
-  bottom: 0;
-  color: #fff;
-  display: inline-block;
-  font-family: Novecento Sans Web,sans-serif;
-  padding: 1.00005rem 1.5rem;
-  position: absolute;
-  right: 0;
-  text-transform: uppercase; }
+  font-size: .75rem; }
 
 .entry-footer {
   text-align: left;
@@ -1124,3 +1111,68 @@ footer {
   text-indent: 100%;
   white-space: nowrap;
   width: 50px; }
+
+.product-type-list {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-transform: uppercase; }
+  .product-type-list li {
+    margin: 0 1.5rem; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.product-grid-item {
+  border: 1px solid #e1e1e1; }
+  .product-grid-item .thumbnail-wrapper {
+    background-color: #e1e1e1;
+    height: 250px;
+    overflow: hidden;
+    position: relative; }
+  .product-grid-item .product {
+    font-size: 14.4px;
+    font-size: .9rem;
+    padding: .75rem 1rem; }
+  .product-grid-item .entry-title {
+    background: #fff;
+    display: inline;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Merriweather Web,serif;
+    letter-spacing: 0;
+    line-height: 1.75;
+    padding-right: .25rem;
+    text-transform: none; }
+  .product-grid-item .price {
+    float: right;
+    padding-left: .25rem;
+    background: #fff; }
+  .product-grid-item .wp-post-image {
+    left: 50%;
+    max-height: 250px;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -52%);
+            transform: translate(-50%, -52%);
+    width: auto; }
+
+.product-grid-item .entry-title:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: "..................................................."; }

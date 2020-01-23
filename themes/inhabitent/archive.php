@@ -20,24 +20,37 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class="product-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="product-grid-item">	
+						<div class="thumbnail-wrapper">
+							<a href='<?php echo get_permalink(); ?>'>
+								<img  class="wp-post-image" src="<?php echo CFS()->get('image'); ?>" alt="">
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+							</a>
+						</div>
+
+						<div class="product">
+							<h2 class="entry-title">
+								
+								<?php echo get_the_title() ?>
+							</h2>
+							
+							<span class="price"><?php echo CFS()->get('price');?></span>
+						</div>
+
+						</div>
 
 			<?php endwhile; ?>
+			</div>
 
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php else : ?>
+				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
