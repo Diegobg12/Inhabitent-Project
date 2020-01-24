@@ -1,13 +1,15 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>
-		<label>
-			<input type="search" class="search-field" placeholder="Type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
-		</label>
-		<button style ="display: none" class="search-submit">
-			<span class="icon-search" aria-hidden="false">
+		<a href="#" class="search-toggle" aria-hidden="true">
 				<i class="fa fa-search"></i>
-			</span>
-			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
-		</button>
+		</a>
+
+		<label>
+			<input type="search" class="search-field hide" placeholder="Type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		</label>
+
+		<input type="submit" id="search-submit" class="screen-reader-text" value="Search">
 	</fieldset>
+
+
 </form>

@@ -112,5 +112,49 @@
 }
 
 .main-navigation{
+    transition: ease;
     display: flex;
 }
+
+.hide {
+    display: none; // hide this by default
+ }
+ 
+
+.header-search {
+    line-height: 1;
+    padding-left: 1.5rem;
+ 
+    .search-toggle {
+       color: $second-color;
+       float: left;
+       padding-top: .33rem;
+    }
+ 
+    fieldset {
+       padding: 0;
+    }
+ 
+    label {
+
+       float: left;
+       margin: 0;
+    }
+ 
+    input[type="search"] {
+       border: 0;
+       background: transparent;
+       font-family: $font_alt;
+       margin-left: $base__space-unit / 2;
+       padding: 0 ($base__space-unit / 5);
+       text-transform: uppercase;
+ 
+       &:focus {
+          outline: none;
+       }
+    }
+ }
+
+
+ 
+ 

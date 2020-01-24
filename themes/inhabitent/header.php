@@ -56,13 +56,16 @@
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</div>
 
-						<div class="menu-main-navigation-container">
+						<div class="header-search">
+									<?php get_search_form(); ?>
+						</form>
+
+
+						</div>
+
 						
-						<li>
-						<!-- <?php get_search_form(); ?> -->
-							<a href="">
-								<i class="fa fa-search"> </i>
-							</a>
+
+
 													
 						</li>
 						
