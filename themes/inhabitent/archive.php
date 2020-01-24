@@ -26,7 +26,6 @@ get_header(); ?>
 						<div class="thumbnail-wrapper">
 							<a href='<?php echo get_permalink(); ?>'>
 								<img  class="wp-post-image" src="<?php echo CFS()->get('image'); ?>" alt="">
-
 							</a>
 						</div>
 

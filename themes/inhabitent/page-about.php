@@ -8,14 +8,12 @@
 
  
 get_header(); ?>
-	<section  class= "about-hero">
+	<section  style =" background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(<?php echo get_the_post_thumbnail_url()?>) no-repeat top ;background-size: cover,cover;" class= "about-hero">
+			<div class= "home-item">
 
-	<div class= "home-item">
-
-	<h1><?php echo get_the_title(); ?> </h1>
-			
-	</div>
-
+			<h1><?php echo get_the_title(); ?> </h1>
+					
+			</div>
 	</section>
 
 

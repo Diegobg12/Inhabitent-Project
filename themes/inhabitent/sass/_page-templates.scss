@@ -7,7 +7,6 @@
 .about-hero{
     display: flex;
     align-items: center;
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../assets/images/about-hero.jpg) no-repeat top;
     height: 100vh;
     background-size: cover,cover;
     justify-content: center;
@@ -36,15 +35,6 @@
 
 
 
-.home-hero{
-    display: flex;
-    align-items: center;
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../assets/images/home-hero.jpg) no-repeat top;
-    height: 100vh;
-    background-size: cover,cover;
-    justify-content: center;
-
-}
 .home{
     .container{
         margin-left: auto;
@@ -339,6 +329,14 @@ h3{
         text-align: left;
     }
 
+    a:hover{
+        color: $fourth-color;
+    }
+
+    .second-button:hover{
+        color: $base-color;
+
+    }
 
 }
 
@@ -349,7 +347,6 @@ h3{
         margin: 0px;
     }
 }
-
 
 
 

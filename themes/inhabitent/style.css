@@ -826,8 +826,6 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/about-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/images/about-hero.jpg) no-repeat top;
   height: 100vh;
   background-size: cover,cover;
   -webkit-box-pack: center;
@@ -850,21 +848,6 @@ object {
   width: 80%; }
 
 /* Front page */
-.home-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
-  height: 100vh;
-  background-size: cover,cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .home .container {
   margin-left: auto;
   margin-right: auto;
@@ -1081,6 +1064,10 @@ h3 {
     padding: 0px; }
   .find-us h1 {
     text-align: left; }
+  .find-us a:hover {
+    color: #2f1339; }
+  .find-us .second-button:hover {
+    color: #fff; }
 
 .error li {
   margin: 0px; }
@@ -1288,7 +1275,6 @@ footer {
   content: "..................................................."; }
 
 .single-product {
-  margin: 0 0 4.5rem;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
