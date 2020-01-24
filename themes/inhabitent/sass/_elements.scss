@@ -79,7 +79,7 @@ table {
 }
 h1{
   clear: both;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: $font_alt;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -89,7 +89,7 @@ h3{
   clear: both;
   line-height: 1.25;
   font-size: 1.3rem;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: $font_alt;
     letter-spacing: 2px;
     a:hover{
       color: $fourth-color;
@@ -112,9 +112,9 @@ h2{
 
 
 label{
-  color: #2f1339;
+  color: $fourth-color;
   display: block;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: $font_alt;
   font-size: 17.6px;
   font-size: 1.1rem;
   margin-bottom: .5rem;

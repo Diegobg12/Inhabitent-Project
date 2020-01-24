@@ -1,7 +1,7 @@
 .product-type-list {
     display: -ms-flexbox;
     display: flex;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: $font_alt;
     font-size: 19.2px;
     font-size: 1.2rem;
     -ms-flex-pack: center;
@@ -46,7 +46,7 @@
         font-size: 16px;
         font-size: 1rem;
         font-weight: 400;
-        font-family: Merriweather Web,serif;
+        font-family: $font__main;
         letter-spacing: 0;
         line-height: 1.75;
         padding-right: .25rem;
@@ -97,7 +97,7 @@
                 }
         
         .price{
-            font-family: Novecento Sans Web,sans-serif;
+            font-family: $font_alt;
             font-size: 28.8px;
             font-size: 1.8rem;
             margin-top: 0;
@@ -105,7 +105,7 @@
         }
 
         h1{
-            color: #d99054;
+            color: $third-color;
         }
 
     }

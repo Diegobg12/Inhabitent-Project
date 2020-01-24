@@ -11,7 +11,7 @@ input[type="submit"] {
     background: $second-color;
     border: none;
     border-radius: 0;
-    color: #fff;
+    color: $base-color;
     cursor: pointer;
     font-family: $font_alt;
     font-size: 14.4px;
@@ -64,12 +64,12 @@ textarea {
 }
 
 .btn{
-	background: #248a83;
+	background: $second-color;
     border: none;
     border-radius: 0;
-    color: #fff;
+    color: $base-color;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: $font_alt;
     font-size: 14.4px;
     font-size: .9rem;
     line-height: 1;

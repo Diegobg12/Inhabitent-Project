@@ -356,7 +356,7 @@ table {
 
 h1 {
   clear: both;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento Sans Web", serif;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -364,7 +364,7 @@ h3 {
   clear: both;
   line-height: 1.25;
   font-size: 1.3rem;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento Sans Web", serif;
   letter-spacing: 2px; }
   h3 a:hover {
     color: #2f1339; }
@@ -384,7 +384,7 @@ h2 {
 label {
   color: #2f1339;
   display: block;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento Sans Web", serif;
   font-size: 17.6px;
   font-size: 1.1rem;
   margin-bottom: .5rem;
@@ -468,7 +468,7 @@ textarea {
   border-radius: 0;
   color: #fff;
   cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento Sans Web", serif;
   font-size: 14.4px;
   font-size: .9rem;
   line-height: 1;
@@ -1042,7 +1042,7 @@ h3 {
     bottom: 0;
     color: #fff;
     display: inline-block;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: "Novecento Sans Web", serif;
     padding: 1.00005rem 1.5rem;
     position: absolute;
     right: 0;
@@ -1062,7 +1062,7 @@ h3 {
 
 .cat-links, .tags-links {
   display: inline-block;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento Sans Web", serif;
   text-transform: uppercase; }
 
 .comments-area h2 {
@@ -1224,7 +1224,7 @@ footer {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento Sans Web", serif;
   font-size: 19.2px;
   font-size: 1.2rem;
   -ms-flex-pack: center;
@@ -1262,7 +1262,7 @@ footer {
     font-size: 16px;
     font-size: 1rem;
     font-weight: 400;
-    font-family: Merriweather Web,serif;
+    font-family: "Merriweather Web", serif;
     letter-spacing: 0;
     line-height: 1.75;
     padding-right: .25rem;
@@ -1300,7 +1300,7 @@ footer {
   .single-product .product-content-wrapper {
     width: 48%; }
   .single-product .price {
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: "Novecento Sans Web", serif;
     font-size: 28.8px;
     font-size: 1.8rem;
     margin-top: 0;
