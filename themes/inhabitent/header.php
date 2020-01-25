@@ -28,7 +28,7 @@
 			<?php
 					if(is_front_page() || is_page('about'))
 					{
-						echo 'home-site-header';
+						echo 'home-site-header main-page';
 					}
 					else
 					{
