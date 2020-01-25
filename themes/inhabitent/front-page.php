@@ -60,9 +60,11 @@ get_header(); ?>
 							<span class="entry-meta">
 
 							
-							<span> <?php echo get_the_date() ?>
-							 <?php $comments_count = get_comments(); ?>
-							 <?php $comments_count; ?></span>
+							<span> 							<?php
+							$date = new DateTime(get_the_date());
+								echo $date->format('d F Y');
+							 ?> /
+							 <?php echo get_comments_number(); ?> Comments
 
 							 </span>
 							<h3> <a href="<?php echo get_permalink(); ?>" rel="bookmark"><?php echo get_the_title() ?></a></h3>

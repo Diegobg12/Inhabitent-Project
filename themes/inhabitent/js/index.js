@@ -22,24 +22,21 @@ $( document ).ready(function() {
 
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
-  var mainPage = $( "#masthead" ).hasClass( "main-page" );
+  var mainPage = $( '#masthead' ).hasClass( 'main-page' );
     
   if (mainPage){
         if (scroll >= 700){
-            $("#masthead").removeClass('home-site-header');
-            $("#masthead").addClass("site-header");
+            $('#masthead').removeClass('home-site-header');
+            $('#masthead').addClass('site-header');
         }
   
   
         if ((scroll < 700) && mainPage){
-          $("#masthead").removeClass('site-header');
-          $("#masthead").addClass("home-site-header");
+          $('#masthead').removeClass('site-header');
+          $('#masthead').addClass('home-site-header');
        }
 
     }
-
-
-   
 
 }); 
 

@@ -13,6 +13,13 @@
     margin: auto;
     align-items: center;
 
+    input[type="search"] {
+        color: grey;
+      }
+    input[type="search"]::placeholder {
+        color: grey;
+      }
+
     i{
         color:$second-color;
     }
@@ -109,6 +116,14 @@
         width: 50px;
 
     }
+
+    input[type="search"] {
+        color: $fifth-color;
+      }
+    input[type="search"]::placeholder {
+        color: $fifth-color;
+      }
+
 }
 
 .main-navigation{
@@ -142,17 +157,20 @@
     }
  
     input[type="search"] {
+        
        border: 0;
        background: transparent;
        font-family: $font_alt;
        margin-left: $base__space-unit / 2;
        padding: 0 ($base__space-unit / 5);
        text-transform: uppercase;
- 
+       
        &:focus {
           outline: none;
        }
     }
+    
+
  }
 
 

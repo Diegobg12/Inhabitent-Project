@@ -101,6 +101,7 @@
             -ms-flex-pack: justify;
             justify-content: space-between;
             padding: .75rem;
+            padding-bottom: 5%;
         }
 
 
@@ -108,6 +109,10 @@
     h2{
         margin-top: 3.75rem;
     }
+}
+
+.search-toggle{
+    display: none;
 }
 
 

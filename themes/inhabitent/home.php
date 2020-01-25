@@ -24,7 +24,7 @@ get_header(); ?>
 								echo $date->format('d F Y');
 							 ?> 
 							/ <?php echo get_comments_number(); ?> COMMENTS
-							/ BY MANDI WISE<?php echo get_the_author_meta(); ?>
+							/ by <?php echo get_author_name(); ?>
 						</span>
 
 					</header>

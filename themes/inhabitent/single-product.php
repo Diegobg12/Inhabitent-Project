@@ -38,8 +38,9 @@ get_header(); ?>
    <?php endwhile; // End of the loop. ?>
 
    </main>
+   <?php get_footer(); ?>
 </div>
 
 
 
-<?php get_footer(); ?>
+

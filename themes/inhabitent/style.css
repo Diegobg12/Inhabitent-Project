@@ -908,10 +908,14 @@ object {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  padding: .75rem; }
+  padding: .75rem;
+  padding-bottom: 5%; }
 
 .home h2 {
   margin-top: 3.75rem; }
+
+.search-toggle {
+  display: none; }
 
 .product-info {
   display: grid;
@@ -1130,6 +1134,16 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .site-header input[type="search"] {
+    color: grey; }
+  .site-header input[type="search"]::-webkit-input-placeholder {
+    color: grey; }
+  .site-header input[type="search"]::-moz-placeholder {
+    color: grey; }
+  .site-header input[type="search"]::-ms-input-placeholder {
+    color: grey; }
+  .site-header input[type="search"]::placeholder {
+    color: grey; }
   .site-header i {
     color: #248a83; }
   .site-header i:hover {
@@ -1204,6 +1218,16 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     width: 50px; }
+  .home-site-header input[type="search"] {
+    color: #f3f3bf; }
+  .home-site-header input[type="search"]::-webkit-input-placeholder {
+    color: #f3f3bf; }
+  .home-site-header input[type="search"]::-moz-placeholder {
+    color: #f3f3bf; }
+  .home-site-header input[type="search"]::-ms-input-placeholder {
+    color: #f3f3bf; }
+  .home-site-header input[type="search"]::placeholder {
+    color: #f3f3bf; }
 
 .main-navigation {
   -webkit-transition: ease;
