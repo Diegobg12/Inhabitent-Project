@@ -758,7 +758,7 @@ a {
   font-weight: bold; }
 
 .comment-metadata {
-  color: #666;
+  color: #404040;
   margin-bottom: 0.75rem; }
 
 .required {
@@ -1412,3 +1412,13 @@ footer {
     text-transform: uppercase; }
   .single-product h1 {
     color: #d99054; }
+
+.taxonomy-description {
+  text-transform: none;
+  color: #404040;
+  font-family: "Merriweather Web", serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: normal;
+  padding-bottom: 1%; }
