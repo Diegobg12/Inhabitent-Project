@@ -191,7 +191,7 @@ h3{
     padding-right: 5%;
     width: 80%;
     li{
-        margin: 0 0 4.5rem;
+        margin: 0 0 3.5rem;
     }
 
     h1{
@@ -357,5 +357,42 @@ h3{
 }
 
 
+.comment-form-author,
+.comment-form-email {
+	float: left;
 
+	input {
+		width: 100%;
+	}
+}
 
+.required {
+	color: $third-color;
+}
+
+.comment-form-author {
+	margin-right: 1%;
+	width: 49%;
+}
+
+.comment-form-email {
+	margin-left: 1%;
+	width: 49%;
+}
+
+.comment-form-url {
+	clear: left;
+	width: 100%;
+
+	input {
+		width: 100%;
+	}
+}
+
+.comment-reply-title {
+	margin-top: $base__space-unit;
+}
+
+#cancel-comment-reply-link:hover {
+	text-decoration: none;
+}

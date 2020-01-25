@@ -719,8 +719,32 @@ a {
 .bypostauthor {
   display: block; }
 
-.comment article {
-  padding-bottom: 1.5rem; }
+.comments-title {
+  margin-bottom: 0; }
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0; }
+  .comment-list li {
+    margin: 0%; }
+  .comment-list > li {
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0%; }
+
+.children li {
+  border-top: 1px solid #e1e1e1; }
+
+.comment {
+  padding-top: 1.5rem; }
+  .comment article {
+    padding-bottom: 1.5rem; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .comment-body p {
+    margin-bottom: 0.75rem; }
 
 .comment-author-avatar {
   border-radius: 50%;
@@ -729,32 +753,43 @@ a {
   overflow: hidden;
   width: 64px; }
 
-.comment-list {
-  margin-left: 0;
-  padding-left: 0; }
-  .comment-list li {
-    margin: 0; }
-
-.comment-list > li {
-  border-bottom: 1px solid #e1e1e1; }
-
-.bypostauthor {
-  display: block; }
-
-.comment-body {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex; }
-  .comment-body .comment-body p {
-    margin-bottom: .75rem; }
-
 .comment-author cite {
   font-style: normal;
-  font-weight: 700; }
+  font-weight: bold; }
 
 .comment-metadata {
-  color: gray;
-  margin-bottom: .75rem; }
+  color: #666;
+  margin-bottom: 0.75rem; }
+
+.required {
+  color: #d99054; }
+
+.comment-form-author,
+.comment-form-email {
+  float: left; }
+  .comment-form-author input,
+  .comment-form-email input {
+    width: 100%; }
+
+.comment-form-author {
+  margin-right: 1%;
+  width: 49%; }
+
+.comment-form-email {
+  margin-left: 1%;
+  width: 49%; }
+
+.comment-form-url {
+  clear: left;
+  width: 100%; }
+  .comment-form-url input {
+    width: 100%; }
+
+.comment-reply-title {
+  margin-top: 1.5rem; }
+
+#cancel-comment-reply-link:hover {
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media
@@ -965,7 +1000,7 @@ h3 {
   padding-right: 5%;
   width: 80%; }
   .post-content li {
-    margin: 0 0 4.5rem; }
+    margin: 0 0 3.5rem; }
   .post-content h1 {
     background-color: #248a83;
     color: #fff;
@@ -1078,6 +1113,36 @@ h3 {
 
 .error li {
   margin: 0px; }
+
+.comment-form-author,
+.comment-form-email {
+  float: left; }
+  .comment-form-author input,
+  .comment-form-email input {
+    width: 100%; }
+
+.required {
+  color: #d99054; }
+
+.comment-form-author {
+  margin-right: 1%;
+  width: 49%; }
+
+.comment-form-email {
+  margin-left: 1%;
+  width: 49%; }
+
+.comment-form-url {
+  clear: left;
+  width: 100%; }
+  .comment-form-url input {
+    width: 100%; }
+
+.comment-reply-title {
+  margin-top: 1.5rem; }
+
+#cancel-comment-reply-link:hover {
+  text-decoration: none; }
 
 footer {
   background-image: url(../../assets/images/dark-wood@2x.png);
