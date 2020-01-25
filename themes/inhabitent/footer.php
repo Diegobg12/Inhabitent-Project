@@ -58,11 +58,12 @@
 
 				</div>
 
+
 				<div class= "site-info">COPYRIGHT &#169 2019 INHABITENT</div>
 				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
+		
 		<?php wp_footer(); ?>
 	</body>
 </html>
