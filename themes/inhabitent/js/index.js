@@ -23,7 +23,7 @@ $( document ).ready(function() {
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
   var mainPage = $( '#masthead' ).hasClass( 'main-page' );
-  console.log("scroll");
+
   if (mainPage){
         if (scroll >= 700){
           

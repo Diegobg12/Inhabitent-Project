@@ -10,10 +10,13 @@
 plugins/*
 !plugins/product-functionality/
 !plugins/inhabitent-blocks-master
-!plugins/business-hours/
+!plugins/business-hours-widget/
 !plugins/my-contact-info/
 !plugins/contact-form-7/
 !plugins/custom-field-suite/
+!plugins/contact-form-7/
+!plugins/custom-field-suite/
+!plugins/business-info/
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
